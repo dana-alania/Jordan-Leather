@@ -189,10 +189,16 @@ li a:hover {
   background-color: #020041;
   min-height: fit-content;
   min-width: 100%;
+  padding-top: 2vh;
+  padding-left: 5vw; 
+  padding-right: 2vw;
 }
 
 .sec-3 > h3 {
+  user-select: none;
   color: white;
+  font-weight: 300;
+  font-size: 6vh;
 }
 
 /*for footer*/
