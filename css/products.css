@@ -1,7 +1,11 @@
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: white;
+  margin: 0;
 }
+
+/*scrollbar*/
 
 /* width */
 ::-webkit-scrollbar {
@@ -21,4 +25,57 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #A28631;
+}
+
+/*logo section*/
+
+.sec-1 {
+  width: 100%;
+  user-select: none;
+}
+
+.sec-1 > img {
+  align-content: center;
+  width: 30%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #020041;
+  overflow: auto;
+  box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.14);
+  -webkit-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.14);
+  -moz-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.14);
+}
+
+.navbar > a {
+  user-select: none;
+  background-color: #020041;
+  color: white;
+  text-decoration: none;
+  font-family: 'Abyssinica SIL';
+  font-size: 3vh;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.navbar > a:hover {
+  color: #C6A337;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+  }
 }
