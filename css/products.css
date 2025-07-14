@@ -79,3 +79,55 @@
     width: 100%;
   }
 }
+
+/* featured section */
+.featured {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.featured > h1 {
+  font-family: 'Abyssinica SIL';
+  font-weight: 200;
+  font-size: 3em;
+  color: #020041;
+  text-align: center;
+  padding-bottom: 4vh;
+  user-select: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  height: fit-content;
+}
+
+.column > h3 {
+  font-family: 'Abyssinica SIL';
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #020041;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  user-select: none;
+}
+
+.column > .imgcontain {
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
