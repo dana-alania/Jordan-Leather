@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Leather and General Merchandise | Home</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Abyssinica SIL' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
 </head>
 <body>
-    <div class="header">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="">SIGN UP</a></li>
-            </ul>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="index.html#contact">CONTACT</a>
+        <a onclick="openFormLogIn()">LOG IN or SIGN UP</a>
     </div>
+    <div class="form" id="login">
+        <form class="form-container">
+            <h1>Log In</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email address" name="email" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="password" required>
+
+            <button type="submit" class="button" onclick="logIn()">Log In</button>
+            <button type="button" class="button cancel" onclick="closeFormLogIn()">Cancel</button>
+            <a href="signup.html">Create an account</a>
+        </form>
+    </div>
+    <div id="overlay"></div>
     <div class="sec-1">
         <div class="column-1-2">
             <img src="assets/logo.jpg" class="img-1">
@@ -24,7 +37,6 @@
         <div class="column-2-2">
             <h3>JORDAN LEATHER & GENERAL MERCHANDISE</h3>
             <p>Authorized distributor of PNP pistol belts and accessories, goods, and other paraphernalia.</p>
-            <div class="btnclass"></div>
             <div class="btn"><a href="products.html">ORDER NOW</a></div>
         </div>
     </div>
