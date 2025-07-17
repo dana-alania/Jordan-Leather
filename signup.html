@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Leather and General Merchandise | Sign Up</title>
     <link rel="stylesheet" href="css/signup.css">
+    <script src="js/signup.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Abyssinica SIL' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
 </head>
 <body>
-    
+    <h1>Create an Account</h1>
+<div class="form">
+        <form class="form-container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email address" name="email" required>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="uname" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="password" required>
+            <label for="cpassword"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter password" name="cpassword" required>
+
+            <button type="submit" class="button" onclick="signUp()">Sign Up</button>
+            <button type="button" class="button cancel" onclick="cancel()">Cancel</button>
+        </form>
+    </div>
 </body>
 </html>
