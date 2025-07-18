@@ -6,6 +6,7 @@
     <title>Jordan Leather and General Merchandise | Products</title>
     <link rel="stylesheet" href="css/products.css">
     <script src="js/index.js"></script>
+    <script src="js/products.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Abyssinica SIL' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
@@ -18,8 +19,22 @@
         <a href="index.html">HOME</a>
         <a href="products.html">PRODUCTS</a>
         <a href="index.html#contact">CONTACT</a>
-        <a href="">LOG IN or SIGN UP</a>
+        <a onclick="openFormLogIn()">LOG IN or SIGN UP</a>
     </div>
+    <div class="form" id="login">
+        <form class="form-container">
+            <h1>Log In</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email address" name="email" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="password" required>
+
+            <button type="submit" class="button" onclick="logIn()">Log In</button>
+            <button type="button" class="button cancel" onclick="closeFormLogIn()">Cancel</button>
+            <a href="signup.html">Create an account</a>
+        </form>
+    </div>
+    <div id="overlay"></div>
     <div class="featured">
         <div class="row">
             <div class="column">
@@ -50,12 +65,94 @@
             <li><p class="cat">Misc.</p></li>
         </ul>
     </div>
+    <div class="prodfocus" id="focus1">
+        <div class="row">
+            <div class="col-25">
+                <img src="assets/bag.jpg">
+            </div>
+            <div class="col-75">
+                <h1>Gun Shoulder Body Bag</h1>
+                <h4>Php 1200</h4>
+                <div class="rating">
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star-o"></i>
+                </div>
+                <p>Color: Blue</p>
+                <p>Made with nylon</p>
+            </div>
+        </div>
+    </div>
+    <div class="prodfocus" id="focus2">
+        <div class="row">
+            <div class="col-25">
+                <img src="assets/bullcap.jpg">
+            </div>
+            <div class="col-75">
+                <h1>Bull Cap</h1>
+                <h4>Php 1000</h4>
+                <div class="rating">
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                </div>
+                <p>For PNCO</p>
+                <p>Made with nylon and a metallic patch</p>
+            </div>
+        </div>
+    </div>
+    <div class="prodfocus" id="focus3">
+        <div class="row">
+            <div class="col-25">
+                <img src="assets/holster.jpg">
+            </div>
+            <div class="col-75">
+                <h1>Inside Holster</h1>
+                <h4>Php 350</h4>
+                <div class="rating">
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                </div>
+                <p>Right-handed, suited for 45 caliber gun</p>
+                <p>Made with leather</p>
+            </div>
+        </div>
+    </div>
+    <div class="prodfocus" id="focus4">
+        <div class="row">
+            <div class="col-25">
+                <img src="assets/shoes.jpg">
+            </div>
+            <div class="col-75">
+                <h1>Patrol Shoes</h1>
+                <h4>Php 2200</h4>
+                <div class="rating">
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                    <i style="color: #030065;" class="fa fa-star"></i>
+                </div>
+                <p>For PNP, BFP, BJMP, BUCOR</p>
+                <p>Available in sizes USA 6-12</p>
+                <p>Gibson's Brand</p>
+                <p>Made in Marikina</p>
+            </div>
+        </div>
+    </div>
     <h1>Featured Products</h1>
     <div class="small-container">
         <div class="row2">
-            <div class="col">
-                <img src="assets/bag.jpg">
-                <h4>Gun Shoulder Body Bag</h4>
+            <div class="col" id="1">
+                <img src="assets/bag.jpg" onclick="show1()">
+                <button onclick="show1()">Gun Shoulder Body Bag</button>
                 <p class="info1">Php 1200</p>
                 <p class="info">Color: Blue</p>
                 <p class="info">Made with nylon</p>
@@ -67,9 +164,9 @@
                     <i style="color: #030065;" class="fa fa-star-o"></i>
                 </div>
             </div>
-            <div class="col">
-                <img src="assets/bullcap.jpg">
-                <h4>Bull Cap</h4>
+            <div class="col" id="2">
+                <img src="assets/bullcap.jpg" onclick="show2()">
+                <button onclick="show2()">Bull Cap</button>
                 <p class="info1">Php 1000</p>
                 <p class="info">For PNCO</p>
                 <p class="info">Made with nylon and a metallic patch</p>
@@ -81,9 +178,9 @@
                     <i style="color: #030065;" class="fa fa-star"></i>
                 </div>
             </div>
-            <div class="col">
-                <img src="assets/holster.jpg">
-                <h4>Inside Holster</h4>
+            <div class="col" id="3">
+                <img src="assets/holster.jpg" onclick="show3()">
+                <button onclick="show3()">Inside Holster</button>
                 <p class="info1">Php 350</p>
                 <p class="info">Right-handed, suited for 45 caliber gun</p>
                 <p class="info">Made with leather</p>
@@ -95,9 +192,9 @@
                     <i style="color: #030065;" class="fa fa-star"></i>
                 </div>
             </div>
-            <div class="col">
-                <img src="assets/shoes.jpg">
-                <h4>Patrol Shoes</h4>
+            <div class="col" id="4">
+                <img src="assets/shoes.jpg" onclick="show4()">
+                <button onclick="show4()">Patrol Shoes</button>
                 <p class="info1">Php 2200</p>
                 <p class="info">For PNP, BFP, BJMP, BUCOR</p>
                 <p class="info">Sizes USA 6-12, Gibson's Brand</p>
