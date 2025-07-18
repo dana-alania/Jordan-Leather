@@ -246,7 +246,7 @@
   text-align: left;
   font-family: 'Abyssinica SIL';
   font-weight: 200;
-  font-size: 4em;
+  font-size: 2em;
   color: #020041;
   padding-left: 3vw;
   padding-bottom: 4vh;
@@ -257,7 +257,7 @@ h1 {
   text-align: center;
   font-family: 'Abyssinica SIL';
   font-weight: 200;
-  font-size: 4em;
+  font-size: 2em;
   color: #020041;
   padding-left: 3vw;
   padding-bottom: 4vh;
@@ -292,7 +292,7 @@ ul li {
 .cat {
   margin: auto;
   font-family: 'Abyssinica SIL';
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: #020041;
   color: white;
   text-align: center;
@@ -313,7 +313,7 @@ ul li {
   padding-top: 4vh;
   display: none;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 .col-25 {
@@ -333,31 +333,41 @@ ul li {
 }
 
 .col-25 > img {
-  width: 15vw;
+  height: 30vh;
   user-select: none;
 }
 
 .prodfocus > .row > .col-75 > h1 {
   padding-left: 0;
   text-align: left;
-  font-size: 5rem;
+  font-size: 2rem;
   color: #030065;
 }
 
 .prodfocus > .row > .col-75 > h4 {
   text-align: left;
-  font-size: 4rem;
+  font-size: 2rem;
   color: grey;
 }
 
 .prodfocus > .row > .col-75 > .rating > i {
   margin-top: 4vh;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .prodfocus > .row > .col-75 > p {
   margin-top: 2vh;
-  font-size: 3rem;
+  font-size: 1rem;
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 720px) {
+  .col-25, .col-75 {
+   width: 100%
+  }
+  .prodfocus > .row > .col-75 > h1, .prodfocus > .row > .col-75 > h4, .prodfocus > .row > .col-75 > .rating, .prodfocus > .row > .col-75 > p {
+    text-align: center;
+  }
 }
 
 /* product gallery */
@@ -380,7 +390,7 @@ ul li {
 .col > h4, .col > button {
   border: none;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-family: 'Abyssinica SIL';
   color: #030065;
 }
@@ -392,20 +402,21 @@ ul li {
 .info1 {
   font-family: 'Abyssinica SIL';
   color: black;
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 
 .info {
   font-family: 'Abyssinica SIL';
   color: grey;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding-bottom: 1vh;
 }
 
 .col > img {
   margin: auto;
   display: block;
-  height: 600px;
-  width: 450px;
+  height: 300px;
+  width: 250px;
   user-select: none;
 }
 
