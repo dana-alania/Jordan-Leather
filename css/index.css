@@ -549,15 +549,12 @@ input[type=submit]:hover {
   justify-content: space-between;
   background-color: #050088;
   padding-left: 1vw;
+  padding-right: 1vw;
   border-radius: 10px 10px 0px 0px; 
 }
 
-.windowhead i {
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
 .windowhead h4 {
+  user-select: none;
   color: white;
   font-weight: 500;
 }
