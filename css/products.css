@@ -310,7 +310,7 @@ ul li {
   padding-top: 4vh;
   display: none;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
 }
 
 .col-25 {
@@ -357,6 +357,38 @@ ul li {
   font-size: 1rem;
   margin-bottom: 1vh;
 }
+
+.btn {
+  margin-top: 4vh;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  font-size: 1rem;
+  background: linear-gradient(90deg, rgba(198, 163, 55, 1) 23%, rgba(162, 134, 49, 1) 100%);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  text-decoration: none;
+  width: 20%;
+  text-align: center;
+  position: inherit;
+  user-select: none;
+}
+
+.btn:hover {
+  background: #bd992d;
+  background: linear-gradient(90deg, rgba(189, 153, 45, 1) 23%, rgba(156, 123, 26, 1) 100%);  
+  text-decoration: none;
+}
+
+
+.btn > a {
+  text-decoration: none;
+  color: white;
+}
+
 
 @media screen and (max-width: 720px) {
   .col-25, .col-75 {
