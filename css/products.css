@@ -81,7 +81,6 @@
 
 /*popup*/
 
-
 .form {
   z-index: 100;
   width: 20vw;
@@ -113,14 +112,13 @@
   padding-top: 1vh;
   text-align: center;
   font-weight: 1000;
-  font-size: 3rem;
+  font-size: 1.5em;
   user-select: none;
   color: #020041;
 }
 
 .form-container > label {
-  color: #020041;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: 'Abyssinica SIL';
   padding-bottom: 1vh;
@@ -130,7 +128,7 @@
 
 .form-container input[type=text], .form-container input[type=password] {
   font-family: 'Abyssinica SIL';
-  font-size: 2rem;
+  font-size: .75em;
   padding: 1vh 1vw 1vh 1vw;
   width: 100%;
   border: none;
@@ -145,7 +143,7 @@
 
 .form-container .button {
   font-family: 'Abyssinica SIL';
-  font-size: 1.5rem;
+  font-size: .875em;
   font-weight: 700;
   background-color: #020041;
   color: white;
@@ -186,12 +184,11 @@
 }
 
 .form-container > a {
-  font-size: 1.5rem;
+  font-size: .8rem;
   font-family: 'Abyssinica SIL';
   color: grey;
   user-select: none;
 }
-
 
 /* featured section */
 .featured {
