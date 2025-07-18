@@ -99,19 +99,9 @@
 
 .column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: fit-content;
-}
-
-.column > h3 {
-  font-family: 'Abyssinica SIL';
-  font-weight: 200;
-  font-size: 1.5em;
-  color: #020041;
-  text-align: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  user-select: none;
+  margin-bottom: 1vh;
 }
 
 .column > .imgcontain {
