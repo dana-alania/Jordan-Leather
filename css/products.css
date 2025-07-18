@@ -81,29 +81,30 @@
 
 /* featured section */
 .featured {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 8vh;
   padding-bottom: 8vh;
 }
 
 .column {
   float: left;
-  width: 33.33%;
   height: fit-content;
   margin-bottom: 1vh;
 }
 
 .column > .imgcontain {
   user-select: none;
-  padding: auto;
   display: flex;
   justify-content: center;
 }
 
 .column > .imgcontain > img {
-  width: 400px;
-  height: 600px;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  width: auto;
+  height: 50vh;
 }
 
 .row:after {
@@ -127,12 +128,24 @@
   margin-bottom: 2vh;
 }
 
-.categories > h1, h1 {
+.categories > h1 {
+  text-align: left;
   font-family: 'Abyssinica SIL';
   font-weight: 200;
-  font-size: 3em;
+  font-size: 4em;
   color: #020041;
-  padding-left: 2vw;
+  padding-left: 3vw;
+  padding-bottom: 4vh;
+  user-select: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Abyssinica SIL';
+  font-weight: 200;
+  font-size: 4em;
+  color: #020041;
+  padding-left: 3vw;
   padding-bottom: 4vh;
   user-select: none;
 }
@@ -165,7 +178,7 @@ ul li {
 .cat {
   margin: auto;
   font-family: 'Abyssinica SIL';
-  font-size: 1.25rem;
+  font-size: 2rem;
   background-color: #020041;
   color: white;
   text-align: center;
@@ -182,23 +195,22 @@ ul li {
 /* product gallery */
 
 .small-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: fit-content;
   margin: auto;
-  margin-left: 6vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
   user-select: none;
 }
 
 .col {
-  flex-basis: 25%;
-  padding: 10px;
-  width: 25%;
+  padding: 2vw;
+  min-width: fit-content;
   margin-bottom: 50px;
 }
 
 .col > h4 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family: 'Abyssinica SIL';
   color: #030065;
 }
@@ -206,17 +218,20 @@ ul li {
 .info1 {
   font-family: 'Abyssinica SIL';
   color: black;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 .info {
   font-family: 'Abyssinica SIL';
   color: grey;
-  font-size: 1.10rem;
+  font-size: 1.5rem;
 }
 
 .col > img {
-  height: 30vh;
+  margin: auto;
+  display: block;
+  height: 600px;
+  width: 450px;
   user-select: none;
 }
 
@@ -225,6 +240,12 @@ ul li {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 720px) {
+  .col {
+   width: 100%
+  }
 }
 
 /* message */
