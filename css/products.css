@@ -83,18 +83,8 @@
 .featured {
   padding-left: 4vw;
   padding-right: 4vw;
-  padding-top: 4vh;
+  padding-top: 8vh;
   padding-bottom: 8vh;
-}
-
-.featured > h1 {
-  font-family: 'Abyssinica SIL';
-  font-weight: 200;
-  font-size: 3em;
-  color: #020041;
-  text-align: center;
-  padding-bottom: 4vh;
-  user-select: none;
 }
 
 .column {
@@ -109,6 +99,11 @@
   padding: auto;
   display: flex;
   justify-content: center;
+}
+
+.column > .imgcontain > img {
+  width: 400px;
+  height: 600px;
 }
 
 .row:after {
@@ -130,7 +125,7 @@
   margin-bottom: 2vh;
 }
 
-.categories > h1 {
+.categories > h1, h1 {
   font-family: 'Abyssinica SIL';
   font-weight: 200;
   font-size: 3em;
@@ -159,7 +154,7 @@ ul {
 
 ul li {
   display: inline-block;
-  width: 33.33%;
+  width: 16.66%;
   float: left;
   user-select: none;
   text-align: center;
