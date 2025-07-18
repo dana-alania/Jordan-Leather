@@ -6,6 +6,7 @@
     <title>Jordan Leather and General Merchandise | Home</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Abyssinica SIL' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
 </head>
@@ -77,11 +78,6 @@
                 <input type="submit" value="Submit" onclick="submitted()">
                 </div>
             </div>
-            <script>
-                function submitted() {
-                    alert("Your inquiry has been submitted!")
-                }
-            </script>
             <h4 class="head">Facebook Page</h4>
             <p><a href="https://www.facebook.com/jordanleatheronlinestore">Jordan Leather Online Store</a></p>
             <h4 class="head">Email Address</h4>
@@ -93,10 +89,36 @@
             <h1>Our Physical Store</h1>
             <img src="./assets/location.png">
             <p class="address">Block 12 Lot 6 & 7 Phase III-D Brgy. 28 Dagat-dagatan Avenue Extn., Caloocan, Philippines</p>
-        <div class="column-2-3">
+        </div>
+    </div>
+    <button class="mess" onclick="chat()"><i class="fa fa-comment"></i> Chat</button>
+    <div class="popup" id="chat">
+        <form action="#" class="formcontainer">
+            <div class="windowhead">
+                <h4><i class="fa fa-comment"></i>Chat with us!</h4>
+                <span class="close-btn" onclick="closeChat()">
+                    <i class="fa fa-times"></i>
+                </span>
+            </div>
 
-        </div>
-        </div>
+            <div class="msg-container">
+                <div class="msg">
+                    <p>How may we help you today?</p>
+                </div>
+            </div>
+
+            <div class="chat-box-container">
+                <div class="chat-box">
+                    <input type="text" placeholder="Type your message here" name="msg" required>
+                    <button type="submit" class="btnn"><i class="fa fa-chevron-circle-right send-btn"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <h4>Jordan Leather & General Merchandise</h4>
+        <h6>COPYRIGHT © 2025</h6>
+        <h6>Prototype for academic purposes</h6>
     </div>
 </body>
 </html>

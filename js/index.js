@@ -13,3 +13,15 @@ function closeFormLogIn() {
     document.getElementById("login").style.display = "none";
     document.getElementById("overlay").style.display = "none";
 }
+
+function chat() {
+    document.getElementById("chat").style.display = "block";
+}
+
+function closeChat() {
+    document.getElementById("chat").style.display = "none"; 
+}
+
+function submitted() {
+    alert("Your message has been submitted!")
+}
