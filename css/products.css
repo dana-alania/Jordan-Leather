@@ -335,6 +335,7 @@ ul li {
 }
 
 .prodfocus > .row > .col-75 > h1 {
+  font-family: 'Abyssinica SIL';
   padding-left: 0;
   text-align: left;
   font-size: 2rem;
@@ -342,6 +343,7 @@ ul li {
 }
 
 .prodfocus > .row > .col-75 > h4 {
+  font-family: 'Abyssinica SIL';
   text-align: left;
   font-size: 2rem;
   color: grey;
@@ -353,9 +355,14 @@ ul li {
 }
 
 .prodfocus > .row > .col-75 > p {
+  font-family: 'Abyssinica SIL';
   margin-top: 2vh;
   font-size: 1rem;
   margin-bottom: 1vh;
+}
+
+.prodfocus > .row > .col-75 > label, .prodfocus > .row > .col-75 > inpur {
+  font-family: 'Abyssinica SIL';
 }
 
 .btn {
@@ -615,9 +622,8 @@ ul li {
   text-align: center;
   color: grey;
   background-color: white;
-  height: 10vh;
+  height: 5vh;
   width: 100%;
-  padding-top: 4vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
