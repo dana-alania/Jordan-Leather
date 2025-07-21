@@ -83,9 +83,9 @@
                 </div>
                 <p>Color: Blue</p>
                 <p>Made with nylon</p>
-                <label for="quantity">Quantity (Maximum of 10)</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10">
-                <div class="btn">Add to Cart</div>
+                <label for="quantity_focus1">Quantity</label>
+                <input type="number" id="quantity_focus1" name="quantity_focus1" min="1" value="1">
+                <div class="btn" onclick="addToCart('Gun Shoulder Body Bag', 1200.00, 'quantity_focus1')">Add to Cart</div>
             </div>
         </div>
     </div>
@@ -106,9 +106,9 @@
                 </div>
                 <p>For PNCO</p>
                 <p>Made with nylon and a metallic patch</p>
-                <label for="quantity">Quantity (Maximum of 10)</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10">
-                <div class="btn">Add to Cart</div>
+                <label for="quantity_focus2">Quantity</label>
+                <input type="number" id="quantity_focus2" name="quantity_focus1" min="1" value="1">
+                <div class="btn" onclick="addToCart('Bull Cap', 1000.00, 'quantity_focus2')">Add to Cart</div>
             </div>
         </div>
     </div>
@@ -129,9 +129,9 @@
                 </div>
                 <p>Right-handed, suited for 45 caliber gun</p>
                 <p>Made with leather</p>
-                <label for="quantity">Quantity (Maximum of 10)</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10">
-                <div class="btn">Add to Cart</div>
+                <label for="quantity_focus3">Quantity</label>
+                <input type="number" id="quantity_focus3" name="quantity_focus1" min="1" value="1">
+                <div class="btn" onclick="addToCart('Inside Holster', 350.00, 'quantity_focus3')">Add to Cart</div>
             </div>
         </div>
     </div>
@@ -153,9 +153,9 @@
                 <p>For PNP, BFP, BJMP, BUCOR</p>
                 <p>Available in sizes USA 6-12</p>
                 <p>Gibson's Brand, Made in Marikina</p>
-                <label for="quantity">Quantity (Maximum of 10)</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10">
-                <div class="btn">Add to Cart</div>
+                <label for="quantity_focus4">Quantity</label>
+                <input type="number" id="quantity_focus4" name="quantity_focus1" min="1" value="1">
+                <div class="btn" onclick="addToCart('Patrol Shoes', 2200.00, 'quantity_focus4')">Add to Cart</div>
             </div>
         </div>
     </div>
@@ -227,6 +227,26 @@
         <h6>COPYRIGHT © 2025</h6>
         <h6>Prototype for academic purposes</h6>
     </div>
+    <button class="cart-btn" onclick="toggleCart()"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count" class="cart-count">0</span></button>
+
+    <div class="popup" id="shopping-cart">
+        <div class="formcontainer">
+            <div class="windowhead">
+                <h4><i class="fa fa-shopping-cart"></i> Your Cart</h4>
+                <span class="close-btn" onclick="closeCart()">
+                    <i class="fa fa-times"></i>
+                </span>
+            </div>
+            <div class="cart-items-container" id="cart-items-container">
+                <p class="empty-cart-message" id="empty-cart-message">Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">Php 0.00</span></p>
+                <button class="button" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
     <button class="mess" onclick="chat()"><i class="fa fa-comment"></i> Chat</button>
     <div class="popup" id="chat">
         <form action="#" class="formcontainer">
