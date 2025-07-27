@@ -437,6 +437,8 @@ ul li {
 
 .col > button {
   font-weight: 600;
+  padding-top: 1vh;
+  padding-left: 0;
 }
 
 .info1 {

@@ -1,39 +1,82 @@
 function show1() {
     document.getElementById("focus1").style.display = "block";
-
     document.getElementById("focus2").style.display = "none";
     document.getElementById("focus3").style.display = "none";
     document.getElementById("focus4").style.display = "none";
+    
+    const targetElement = document.getElementById("focus1");
+
+    if (targetElement) {
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start'      
+        });
+    } else {
+        console.warn(`Element with ID '${elementId}' not found.`);
+    }
 
 }
 
 function show2() {
     document.getElementById("focus2").style.display = "block";
-
     document.getElementById("focus1").style.display = "none";
     document.getElementById("focus3").style.display = "none";
     document.getElementById("focus4").style.display = "none";
+    
+    const targetElement = document.getElementById("focus2");
+
+    if (targetElement) {
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start'      
+        });
+    } else {
+        console.warn(`Element with ID '${elementId}' not found.`);
+    }
 
 }
 
 function show3() {
     document.getElementById("focus3").style.display = "block";
-
     document.getElementById("focus1").style.display = "none";
     document.getElementById("focus2").style.display = "none";
     document.getElementById("focus4").style.display = "none";
+
+    const targetElement = document.getElementById("focus3");
+
+    if (targetElement) {
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start'      
+        });
+    } else {
+        console.warn(`Element with ID '${elementId}' not found.`);
+    }
 
 }
 
 function show4() {
     document.getElementById("focus4").style.display = "block";
-
     document.getElementById("focus1").style.display = "none";
     document.getElementById("focus2").style.display = "none";
     document.getElementById("focus3").style.display = "none";
 
-}
+    const targetElement = document.getElementById("focus4");
 
+    if (targetElement) {
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start'      
+        });
+    } else {
+        console.warn(`Element with ID '${elementId}' not found.`);
+    }
+
+}
 
 // shopping cart
 
