@@ -65,13 +65,16 @@ function updateCartCount() {
 function renderCart() {
     const cartItemsContainer = document.getElementById('cart-items-container');
     const cartTotalElement = document.getElementById('cart-total');
-    const emptyCartMessage = document.getElementById('empty-cart-message');
+    const emptyCartMessage = document.getElementById('empty-cart-message'); 
+
     cartItemsContainer.innerHTML = '';
     let total = 0;
 
     if (cart.length === 0) {
         emptyCartMessage.style.display = 'block';
     } else {
+        emptyCartMessage.style.display = 'none';
+
         cart.forEach((item, index) => {
             const cartItemDiv = document.createElement('div');
             cartItemDiv.classList.add('cart-item');
