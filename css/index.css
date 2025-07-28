@@ -645,8 +645,11 @@ input[type=submit]:hover {
   text-align: center;
   color: grey;
   background-color: white;
-  height: 5vh;
+  height: 7vh;
   width: 100%;
   margin-top: 2vh;
-  margin-bottom: vh;
+  margin-bottom: 2vh;
 }
+
+
+
